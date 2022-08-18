@@ -1,1 +1,108 @@
+    body{
+        height: 100vh;
+        width: 100%;
+        background-color: #d6d2d1;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /*style for section */
+    section>div.row{
+        /* border: 2px solid red; */
+        height: 58rem;
+        /* height: 100%; */
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
     
+    section>div.row>div.col-1{
+        /* border: 2px solid blue; */
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* form section starts here */
+    section>div.row>div.col-1>form{
+        border: 2px solid #4f4d4e;
+        border-radius: 10px 10px 10px 10px;
+        width: 30em;
+        height: 40rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    div.text_wraper{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        /* border:1px solid #4f4d4e; */
+        height: 5rem;
+    }
+
+    div.text_wraper>h1{
+        font-weight: 100;
+        font-size: 2.2rem;
+        color: #272727;
+    }
+    p{
+        color: #272727;
+    }
+
+    input#email{
+        width: 22.2rem;
+        height: 2.5rem;
+        border: 1px solid #4f4d4e;
+        border-radius: 10px ;
+    }
+    input#input_password{
+        width: 20rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 10px 0px 0px 10px ;
+
+    }
+    
+    section>div.row>div.col-1>form .input_wraper{
+        border: 1px solid #4f4d4e;
+        width: 22rem;
+        display: flex;
+        align-items:center ;
+        /* justify-content: space-between; */
+        gap: 8px;
+        border-radius: 10px 10px 10px 10px;
+
+    }
+
+    section>div.row>div.col-1>form .input_wraper>img{
+        width: 18px;
+        height: 28px;
+    }
+
+    section>div.row>div.col-2{
+        /* border: 2px solid green; */
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.btn>button{
+        width: 22rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        font-weight: 100;
+        font-size: 20px;
+        color: #272727;
+    }

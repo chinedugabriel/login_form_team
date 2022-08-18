@@ -60,22 +60,27 @@
     }
 
     input#email{
-        width: 22.2rem;
+        width: 22.6rem;
         height: 2.5rem;
         border: 1px solid #4f4d4e;
         border-radius: 10px ;
+        padding: 0px 5px;
+        font-weight: 100;
+        font-size: 17px;
     }
     input#input_password{
         width: 20rem;
         height: 2.5rem;
         border: none;
         border-radius: 10px 0px 0px 10px ;
-
+        padding: 0px 5px;
+        font-weight: 100;
+        font-size: 17px;
     }
     
     section>div.row>div.col-1>form .input_wraper{
         border: 1px solid #4f4d4e;
-        width: 22rem;
+        width: 22.7rem;
         display: flex;
         align-items:center ;
         /* justify-content: space-between; */
@@ -98,7 +103,7 @@
     }
 
     div.btn>button{
-        width: 22rem;
+        width: 22.7rem;
         height: 2.5rem;
         border: none;
         border-radius: 10px 10px 10px 10px;

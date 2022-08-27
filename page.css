@@ -40,6 +40,13 @@
         align-items: center;
         gap: 20px;
     }
+
+    /* login form starts here */
+    form#login{
+        display: none;
+    }
+    
+    /* login form ends here */
     div.text_wrapper{
         display: flex;
         flex-flow: column nowrap;
@@ -148,6 +155,8 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
         font-size: 20px;
         color: #272727;
     }
+
+
 
     @media screen  and (max-width: 899px) {
 

@@ -40,7 +40,7 @@
         align-items: center;
         gap: 20px;
     }
-    div.text_wraper{
+    div.text_wrapper{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -50,13 +50,15 @@
         height: 5rem;
     }
 
-    div.text_wraper>h1{
+    div.text_wrapper>h1{
         font-weight: 100;
         font-size: 2.2rem;
         color: #272727;
     }
+
     p{
         color: #272727;
+        margin-bottom: 10px;
     }
 
     input#email{
@@ -77,8 +79,23 @@
         font-weight: 100;
         font-size: 17px;
     }
+    input#input_signUp_password{
+        width: 23rem;
+        height: 2.5rem;
+        border: none !important;
+        border-radius: 10px 10px 10px 10px ;
+        padding: 0px 5px;
+        font-weight: 100;
+        font-size: 17px;
+    }
+
+/* state */
+input#email:focus,input#input_password:active,input#input_password:hover,  input#input_password:focus{
+    border: none !important;
+    outline: none !important; 
+}
     
-    section>div.row>div.col-1>form .input_wraper{
+    section>div.row>div.col-1>form .input_wrapper{
         border: 1px solid #4f4d4e;
         width: 22.7rem;
         display: flex;
@@ -89,7 +106,7 @@
 
     }
 
-    section>div.row>div.col-1>form .input_wraper>img{
+    section>div.row>div.col-1>form .input_wrapper img{
         width: 18px;
         height: 28px;
     }
@@ -100,6 +117,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    /* password detector style */
+    .passwordIndicator{
+        display: flex;
+        flex-flow: row nowrap;
+        /* border: 1px solid red; */
+        width: 22em;
+        height: 1em;
+        justify-content: space-evenly;
+        align-items: baseline;
+        /* align-content: center; */
+    }
+    .passwordIndicator>div{
+        border: 1px solid #4f4d4e;
+        width: 3em;
+        height: 4px;
+
+    }
+    .passwordIndicator>p{
+        font-size: 13px;
     }
 
     div.btn>button{
@@ -169,7 +206,7 @@
         align-items: center;
         gap: 25px;
     }
-    div.text_wraper{
+    div.text_wrapper{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -180,7 +217,7 @@
         background-color: #d6d2d1;
     }
 
-    div.text_wraper>h1{
+    div.text_wrapper>h1{
         font-weight: 100;
         font-size: 1.9rem;
         color: #272727;
@@ -194,15 +231,14 @@
         width: 14.4rem;
         height: 2rem;
         border: 1px solid #4f4d4e;
-        border-radius: 10px ;
+        border-radius: 10px;
         padding: 0px 8px;
         font-weight: 100;
         font-size: 13px;
     }
-    input#email :active{
+    input#email:active,input#email:hover,input#email:focus,input#input_password:active,   input#input_password:hover,   input#input_password:focus{
         border: none !important;
-        outline: none !important;
-        
+        outline: none !important; 
     }
     input#input_password{
         width: 12rem;
@@ -213,8 +249,38 @@
         font-weight: 100;
         font-size: 17px;
     }
-    
-    section>div.row>div.col-1>form .input_wraper{
+    input#input_signUp_password{
+        width: 23rem;
+        height: 2rem;
+        border: none !important;
+        border-radius: 10px 10px 10px 10px ;
+        padding: 0px 5px;
+        font-weight: 100;
+        font-size: 17px;
+    }
+
+        /* password detector style */
+        .passwordIndicator{
+            display: flex;
+            flex-flow: row nowrap;
+            /* border: 1px solid red; */
+            width: 16em;
+            height: 1em;
+            justify-content: space-evenly;
+            align-items: baseline;
+            /* align-content: center; */
+        }
+        .passwordIndicator>div{
+            border: 1px solid #ffffff;
+            width:2em;
+            height: 4px;
+            
+        }
+        .passwordIndicator>p{
+            color: #ffffff !important;
+        }
+
+    section>div.row>div.col-1>form div.input_wrapper{
         border: 1px solid #4f4d4e;
         width: 15rem;
         height: 2.2rem;
@@ -227,7 +293,7 @@
 
     }
 
-    section>div.row>div.col-1>form .input_wraper>img{
+    section>div.row>div.col-1>form .input_wrapper img{
         width: 16px;
         height: 24px;
         align-self: center;

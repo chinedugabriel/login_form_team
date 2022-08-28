@@ -1,5 +1,6 @@
 // login var...
 let input_password = document.getElementById("input_password");
+let input_email = document.getElementById("email");
 
 let icon_view = document.getElementById("icon_view");
 
@@ -99,6 +100,9 @@ registerForm.style.display = "flex";
         if( registerForm.style.display == "flex" && signUpEmail.value != "" && signUpPassword.value != ""){
             registerForm.style.display = "none";
             loginForm.style.display = "flex";
+            // this get and show the values from the signup form to the login form
+            input_password.value = signUpPassword.value;
+            input_email.value = signUpEmail.value;
         }else{
             alert("SignUp to join");
         }

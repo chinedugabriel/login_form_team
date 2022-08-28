@@ -38,7 +38,7 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
     }
 
     /* login form starts here */
@@ -316,10 +316,17 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
         align-items: center;
     }
 
+    div.btn{
+        height: 3em;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     div.btn>button{
         width: 15rem;
         height: 2rem;
-        border: none;
+        border: 1px solid #272727;
         border-radius: 10px 10px 10px 10px;
         font-weight: 100;
         font-size: 17px;

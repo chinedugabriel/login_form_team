@@ -72,7 +72,7 @@ function passwordStrengthChecker(){
         level_3.style.backgroundColor ="#04ee81";
         level_4.style.backgroundColor ="#04ee81";
         level_5.style.backgroundColor ="#04ee81";
-        message.style.color = "green";
+        message.style.color = "#04ee81";
     }
     else if( /[a-z]/.test(signUpPassword.value) && /[@#$%!^&*()_+=><?/['\]'{}]/.test(signUpPassword.value)){
         message.innerHTML = "strong";

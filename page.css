@@ -214,7 +214,7 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 30px !important;
     }
     div.text_wrapper{
         display: flex;

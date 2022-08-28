@@ -51,7 +51,7 @@ function passwordStrengthChecker(){
         // console.log("it's working");
         message.innerHTML = "weak";
         level_1.style.backgroundColor ="red";
-        level_2.style.backgroundColor ="red";
+        level_2.style.backgroundColor ="";
         level_3.style.backgroundColor ="";
         level_4.style.backgroundColor ="";
         level_5.style.backgroundColor ="";

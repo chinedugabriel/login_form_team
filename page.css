@@ -45,7 +45,7 @@
     form#login{
         display: none;
     }
-    
+
     /* login form ends here */
     div.text_wrapper{
         display: flex;
@@ -68,7 +68,7 @@
         margin-bottom: 10px;
     }
 
-    input#email{
+    input#email,input#email-signUp{
         width: 22.6rem;
         height: 2.5rem;
         border: 1px solid #4f4d4e;
@@ -127,7 +127,7 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
     }
     /* password detector style */
     .passwordIndicator{
-        display: flex;
+        display: none;
         flex-flow: row nowrap;
         /* border: 1px solid red; */
         width: 22em;
@@ -136,11 +136,11 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
         align-items: baseline;
         /* align-content: center; */
     }
-    .passwordIndicator>div{
+    .passwordIndicator>div.level{
         border: 1px solid #4f4d4e;
         width: 3em;
         height: 4px;
-
+        /* background-color: red; */
     }
     .passwordIndicator>p{
         font-size: 13px;
@@ -191,6 +191,7 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        background-color: #cacaca79;
     }
     
     section>div.row>div.col-1{
@@ -223,7 +224,7 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
         gap: 5px;
         /* border:1px solid #4f4d4e; */
         height: 5rem;
-        background-color: #d6d2d1;
+        /* background-color: #d6d2d1; */
     }
 
     div.text_wrapper>h1{
@@ -236,7 +237,7 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
         color: #272727;
     }
 
-    input#email{
+    input#email,input#email-signUp{
         width: 14.4rem;
         height: 2rem;
         border: 1px solid #4f4d4e;
@@ -261,7 +262,7 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
     input#input_signUp_password{
         width: 23rem;
         height: 2rem;
-        border: none !important;
+        border: none;
         border-radius: 10px 10px 10px 10px ;
         padding: 0px 5px;
         font-weight: 100;
@@ -270,7 +271,7 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
 
         /* password detector style */
         .passwordIndicator{
-            display: flex;
+            display: none;
             flex-flow: row nowrap;
             /* border: 1px solid red; */
             width: 16em;
@@ -279,14 +280,13 @@ input#email:focus,input#input_password:active,input#input_password:hover,  input
             align-items: baseline;
             /* align-content: center; */
         }
-        .passwordIndicator>div{
+        .passwordIndicator>div.level{
             border: 1px solid #ffffff;
             width:2em;
             height: 4px;
-            
         }
         .passwordIndicator>p{
-            color: #ffffff !important;
+            color: #ffffff;
         }
 
     section>div.row>div.col-1>form div.input_wrapper{

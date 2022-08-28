@@ -32,15 +32,15 @@ let level_3 = document.getElementById("level3");
 let level_4 = document.getElementById("level4");
 let level_5 = document.getElementById("level5");
 let message = document.getElementById("message");
-// let specialCharacter = /@#$%!^&*()_+=><?\/[]{}/
 
-function singUpChecker(){
+
+
+
     // length of the words
     // check for special characters like @#$%!^&*()_+=><?/[]{} 
     // check how many times a character occurs
     // message(weak, medium, strong, veryStrong)
     // message_color(red, yellow, orange, green)
-}
 
 function passwordStrengthChecker(){
     // this display the passwordIndicatorSection when the password input change
@@ -84,7 +84,23 @@ function passwordStrengthChecker(){
         message.style.color = "orange";
         
     }
-    // message.innerHTML = signUpPassword.value;
-
 }
 signUpPassword.addEventListener("change", passwordStrengthChecker);
+
+// form var....
+let registerForm = document.getElementById("register");
+let loginForm = document.getElementById("login");
+
+// makes the form section to display in flex
+registerForm.style.display = "flex";
+
+// the function validates the signup inputs
+    function toggleFormSection(){
+        if( registerForm.style.display == "flex" && signUpEmail.value != "" && signUpPassword.value != ""){
+            registerForm.style.display = "none";
+            loginForm.style.display = "flex";
+        }else{
+            alert("SignUp to join");
+        }
+    }
+    document.getElementById("btn-signUp").addEventListener("click", toggleFormSection);
